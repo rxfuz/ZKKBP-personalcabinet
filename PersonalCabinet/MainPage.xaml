@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonalCabinet.MainPage"
+             Title="Особистий кабінет"
+             BackgroundColor="White">
+    <Grid>
+        <WebView x:Name="webView"
+                 Source="https://www.zkkbp.com.ua/cabinet/login"
+                 HorizontalOptions="Fill"
+                 VerticalOptions="Fill" />
+        <Grid x:Name="exitDialogOverlay"
+              BackgroundColor="#80000000"
+              IsVisible="False"
+              InputTransparent="False">
+            <Border x:Name="exitFrame"
+                    BackgroundColor="White"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 24"
+                    Padding="20"
+                    WidthRequest="300"
+                    HeightRequest="200"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center">
+                <VerticalStackLayout Spacing="16">
+                    <Label Text="Вихід"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           TextColor="#1e3a5f" />
+                    <Label Text="Вийти з додатку?"
+                           FontSize="16"
+                           HorizontalOptions="Center"
+                           TextColor="#333333" />
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="12" Margin="0,10,0,0">
+                        <Button Text="Ні"
+                                BackgroundColor="#E0E0E0"
+                                TextColor="Black"
+                                CornerRadius="12"
+                                HeightRequest="44"
+                                Clicked="OnExitCancelClicked" />
+                        <Button Text="Так"
+                                Grid.Column="1"
+                                BackgroundColor="#1e3a5f"
+                                TextColor="White"
+                                CornerRadius="12"
+                                HeightRequest="44"
+                                Clicked="OnExitConfirmClicked" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+        </Grid>
+    </Grid>
+</ContentPage>
