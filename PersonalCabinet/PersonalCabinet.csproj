@@ -40,11 +40,11 @@
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 
-		<Authors>rufusxxxx</Authors>
+		<Authors>rxfuz</Authors>
 		<Company>ZKKBP</Company>
-		<Copyright>by rufusxxxx (https://github.com/rufusxxxx)</Copyright>
-		<PackageProjectUrl>https://github.com/rufusxxxx/ZKKBP-personalcabinet</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/rufusxxxx/ZKKBP-personalcabinet</RepositoryUrl>
+		<Copyright>by rxfuz (https://github.com/rxfuz)</Copyright>
+		<PackageProjectUrl>https://github.com/rxfuz/ZKKBP-personalcabinet</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/rxfuz/ZKKBP-personalcabinet</RepositoryUrl>
 		
 	</PropertyGroup>
 
