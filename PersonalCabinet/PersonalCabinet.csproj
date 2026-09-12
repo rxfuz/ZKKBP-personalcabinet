@@ -24,7 +24,7 @@
 		<ApplicationTitle>Особистий кабінет</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.zkkbp.personalcabinet.by.rufusxxxx</ApplicationId>
+		<ApplicationId>com.zkkbp.personalcabinet</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
